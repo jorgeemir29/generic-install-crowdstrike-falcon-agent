@@ -10,7 +10,7 @@
 
   # Import tasks from redhat-hosts / behing proxy.
   - name: Importing Tasks for Linux-RHEL Hosts ....
-    import_task: linux-rhel.yaml
+    import_tasks: linux-rhel.yaml
     when: ansible_os_family == "RedHat"
 
   - name: Importing tasks from Linux-RHEL Behing Proxy ...
